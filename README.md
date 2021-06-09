@@ -36,3 +36,60 @@ docker-compose run cm npm run db:seed:all
 docker-compose up
 ```
 
+
+# Endpoints
+
+Coffee Machine Endpoint:- 
+
+````
+All
+/api/coffee-machines
+
+Large Coffee Machines
+/api/coffee-machines?product_type=COFFEE_MACHINE_LARGE
+
+Small Coffee Machines
+/api/coffee-machines?product_type=COFFEE_MACHINE_SMALL
+
+Espresso
+/api/coffee-machines?product_type=ESPRESSO_MACHINE
+
+Water Line Compatible 
+/api/coffee-machines?water_line=true
+
+
+Compined
+/api/coffee-machine?water_line=true&product_type=COFFEE_MACHINE_SMALL
+
+````
+
+
+Coffee Pods Endpoint:- 
+
+````
+All
+/api/coffee-pods
+
+Product Types
+/api/coffee-pods?product_type=COFFEE_POD_LARGE
+/api/coffee-machines?product_type=COFFEE_POD_SMALL
+/api/coffee-machines?product_type=ESPRESSO_POD
+
+Coffee Flavors
+/api/coffee-machines?coffee_flavor=COFFEE_FLAVOR_VANILLA
+/api/coffee-machines?coffee_flavor=COFFEE_FLAVOR_CARAMEL
+/api/coffee-machines?coffee_flavor=COFFEE_FLAVOR_PSL
+/api/coffee-machines?coffee_flavor=COFFEE_FLAVOR_MOCHA
+/api/coffee-machines?coffee_flavor=COFFEE_FLAVOR_HAZELNUT
+
+Pack Sizes
+/api/coffee-machines?pack_size=1
+/api/coffee-machines?pack_size=3
+/api/coffee-machines?pack_size=5
+/api/coffee-machines?pack_size=7
+````
+
+
+
+
+
