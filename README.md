@@ -24,9 +24,13 @@ npm run dev
 
 Your app should now be running on [localhost:3000](http://localhost:5000/).
 
-## Docker 
+## Docker RECOMMENDED
 
 ```
-
+docker-compose build
+dokcer-compose run cm npm run db:create
+docker-compose run cm npm run db:migrate
+docker-compose run cm npm run db:seed:all
+docker-compose up
 ```
 
