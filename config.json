@@ -1,5 +1,5 @@
 {
   "database": {
-    "connectionString": "postgres://postgres:postgres@172.17.0.2:5432/cm_development?encoding=utf8&pool=5&timeout=5000"
+    "connectionString": "postgres://postgres:postgres@postgres:5432/cm_development?encoding=utf8&pool=5&timeout=5000"
   }
 }
