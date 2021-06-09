@@ -36,3 +36,15 @@ docker-compose run cm npm run db:seed:all
 docker-compose up
 ```
 
+
+# Endpoints
+
+/api/coffee-machines
+
+/api/coffee-pods
+
+
+
+
+
+
