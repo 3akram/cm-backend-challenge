@@ -1,13 +1,3 @@
-### This repository is no longer maintained!
-
-**For the most up to date test app to get you started on Heroku, head on over to [`node-js-getting-started`](https://github.com/heroku/node-js-getting-started).**
-
----
-
-# node-js-sample
-
-A barebones Node.js app using [Express](http://expressjs.com/).
-
 ## First Time Running
 
 Make sure you have [Node.js](http://nodejs.org/) and the [PostgreSQL](https://www.postgresql.org/) installed.
