@@ -1,3 +1,6 @@
+const CoffeeMachineService = require('../src/services/coffee-machine.service');
+
 exports.getAllCoffeeMachines = async (req, res) => {
-  return res.json({message: 'it works!!'});
+  const coffeeMachines = await CoffeeMachineService.getAllCoffeeMachines();
+  return res.json(coffeeMachines);
 }
