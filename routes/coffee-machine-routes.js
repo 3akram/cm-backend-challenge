@@ -1,7 +1,7 @@
 const express = require('express');
-const CoffeeMachineController = require("../controller/coffee-machines-controller");
+const CoffeeMachinesController = require("../controller/coffee-machines-controller");
 const router  = express.Router();
 
-router.get('/', CoffeeMachineController.getAllCoffeeMachines)
+router.get('/', CoffeeMachinesController.getAllCoffeeMachines)
 
 module.exports = router;
