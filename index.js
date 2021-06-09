@@ -5,10 +5,6 @@
     process.exit(1);
   });
 
-  const config = require('./config.json');
-
-  console.log('run::: Running server with configuration', config);
-
   // Start initializing Postgres DB connection
   const Database = require('./src/services/database.service');
   const database = new Database();
