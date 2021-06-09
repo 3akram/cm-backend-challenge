@@ -13,6 +13,8 @@ app.use(bodyParser.urlencoded({
 
 app.get('/', (req, res) => res.send(database));
 
+// Register coffee machines endpoint
+app.use('/coffee-machines', require('../routes/coffee-machine-routes'));
 
 const PORT = process.env.PORT || 3000;
 
