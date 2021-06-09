@@ -21,5 +21,12 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'CoffeeMachine',
   });
+
+  CoffeeMachine.addScope('compatible', {
+    where: {
+      water_line: true
+    }
+  });
+
   return CoffeeMachine;
 };

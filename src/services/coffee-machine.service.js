@@ -6,21 +6,12 @@ const db            =  database.getDatabase()
 
 const CoffeeMachine = require('../../models/coffeemachine')(db, DataTypes);
 
-/**
- * Return Object that handle filters
- * @private
- */
-const __buildFilterQuery = (filters) => {
-  return {
-    'product_type': '',
-    'water_line'  : ''
-  };
-}
-
 module.exports = {
-  getAllCoffeeMachines: async () => {
+  getAllCoffeeMachines: async (filters) => {
     try {
-      return await CoffeeMachine.findAll();
+      return await CoffeeMachine.findAll({
+        where: {...filters}
+      });
     } catch (e) {
       throw e;
     }
