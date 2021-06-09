@@ -1,6 +1,5 @@
 const express    = require('express');
 const bodyParser = require('body-parser');
-const path       = require('path');
 
 const app = express();
 
@@ -15,6 +14,7 @@ app.get('/', (req, res) => res.send(database));
 
 // Register coffee machines endpoint
 app.use('/coffee-machines', require('../routes/coffee-machine-routes'));
+app.use('/coffee-pods',     require('../routes/coffee-pod-routes'));
 
 const PORT = process.env.PORT || 3000;
 

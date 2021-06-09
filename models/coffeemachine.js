@@ -13,6 +13,7 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
     }
   };
+
   CoffeeMachine.init({
     product_type: DataTypes.ENUM('COFFEE_MACHINE_LARGE', 'COFFEE_MACHINE_SMALL', 'ESPRESSO_MACHINE'),
     water_line  : DataTypes.BOOLEAN,
@@ -20,12 +21,6 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'CoffeeMachine',
-  });
-
-  CoffeeMachine.addScope('compatible', {
-    where: {
-      water_line: true
-    }
   });
 
   return CoffeeMachine;
